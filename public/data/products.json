@@ -1,0 +1,33 @@
+[
+    {
+    "id": "1",
+    "title": "Acme T-Shirt",
+    "price": "$20.00 USD",
+    "image": "/t-shirt-color-black.avif"
+
+  },
+  {
+    "id": "2",
+    "title": "Acme Prism T-Shirt",
+    "price": "$25.00 USD",
+    "image": "/t-shirt-spiral-1.avif"
+  },
+  {
+    "id": "3",
+    "title": "Acme Circles T-Shirt",
+    "price": "$20.00 USD",
+    "image": "/t-shirt-1.png"
+  },
+  {
+    "id": "4",
+    "title": "Acme Sticker",
+    "price": "$4.00 USD",
+    "image": "/sticker.avif"
+  },
+  {
+    "id": "5",
+    "title": "Acme Rainbow Sticker",
+    "price": "$4.00 USD",
+    "image": "sticker-rainbow (1).avif"
+  }
+]
