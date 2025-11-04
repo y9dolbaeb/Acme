@@ -12,7 +12,7 @@ export default function Product() {
       {/* main растягивается на всю ширину и занимает всё доступное вертикальное пространство */}
       <main className="w-[80%] bg-black rounded-2xl border border-gray-800 relative hover:border-blue-500 mx-auto flex flex-row p-8 gap-8">
   {/* Left side - Image */}
-  <div className="flex-1 flex items-center justify-center">
+  <div className="w-2/3 flex-1 flex items-center justify-center">
     <img
       className="max-w-full h-auto"
       src="/t-shirt-1.png"
@@ -22,9 +22,9 @@ export default function Product() {
     />
   </div>
 
-  {/* Right side - Product Info */}
-  <div className="flex-1 flex flex-col text-white space-y-6">
-    {/* Title and Price */}
+
+  <div className="w-1/3 flex-1 flex flex-col text-white space-y-6">
+
     <div>
       <h1 className="text-4xl font-bold mb-4">Acme Circles T-Shirt</h1>
       <span className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
@@ -36,13 +36,13 @@ export default function Product() {
     <div>
       <p className="text-sm font-semibold mb-3 uppercase tracking-wider">COLOR</p>
       <div className="flex gap-3">
-        <button className="px-6 py-2 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition">
+        <button className="px-6 py-2 bg-[#171717] text-white rounded-full font-medium hover:bg-gray-700 transition">
           Black
         </button>
-        <button className="px-6 py-2 bg-gray-800 text-white rounded-full font-medium hover:bg-gray-700 transition">
+        <button className="px-6 py-2 bg-[#171717] text-white rounded-full font-medium hover:bg-gray-700 transition">
           White
         </button>
-        <button className="px-6 py-2 bg-gray-800 text-gray-500 rounded-full font-medium opacity-50 cursor-not-allowed">
+        <button className="px-6 py-2 bg-[#171717] text-white rounded-full font-medium opacity-50 cursor-not-allowed">
           Blue
         </button>
       </div>
@@ -55,7 +55,7 @@ export default function Product() {
         {['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'].map((size) => (
           <button
             key={size}
-            className="px-5 py-2 bg-gray-800 text-white rounded-full font-medium hover:bg-gray-700 transition border border-gray-700 hover:border-gray-500"
+            className="px-5 py-2 bg-[#171717] text-white rounded-full font-medium hover:bg-gray-700 transition border border-gray-700 hover:border-gray-500"
           >
             {size}
           </button>
@@ -75,6 +75,7 @@ export default function Product() {
     </button>
   </div>
 </main>
+<Footer/>
     </div>
   );
 }

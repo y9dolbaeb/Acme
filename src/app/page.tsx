@@ -108,6 +108,7 @@ export default function Home() {
 
 <div className="w-12"></div>
 </Marquee>
+
       <Footer />
     </div>
   );

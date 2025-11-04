@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-gray-800 bg-[#171717]">
+    <footer className="w-full border-t border-gray-800 bg-[#171717] mt-10">
       {/* Верхняя часть футера */}
       <div className="px-6 py-12">
         <div className="flex flex-row  items-start">
