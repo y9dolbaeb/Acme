@@ -37,7 +37,7 @@ const sortOptions = [
 ];
 
 export default function all() {
-  const [activeCategory, setActiveCategory] = useState<string>("All");
+  const [activeCategory, setActiveCategory] = useState<string>("Stickers");
   const [sortBy, setSortBy] = useState<string>("Relevance");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [products, setProducts] = useState<Product[]>([]);
@@ -49,14 +49,11 @@ export default function all() {
       .catch((err) => console.error("Failed to load products:", err));
   }, []);
 
-  const filteredProducts = products.filter((product: Product) => {
-    const matchesCategory =
-      activeCategory === "All" || product.category === activeCategory;
-    const matchesSearch = product.title
-      .toLowerCase()
-      .includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
-  });
+const filteredProducts = products.filter(
+  (product: Product) =>
+    product.category === "sticker" &&
+    product.title.toLowerCase().includes(searchQuery.toLowerCase())
+);
 
   return (
     <div className="min-h-screen bg-[#171717] flex flex-col">
