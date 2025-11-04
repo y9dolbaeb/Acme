@@ -15,14 +15,19 @@ export default function Main() {
           </span>
         </div>
         {/* Здесь будет изображение футболки */}
-        <div className="text-gray-600">
-          <img
+        <div 
+        
+        className="text-gray-600 ">
+          <a href="/product">
+            <img
             className="hover:scale-110 duration-300 ease-in-out"
             src="/t-shirt-1.png"
             alt="t-shirt"
             width={550}
             height={550}
+            
           />
+          </a>
         </div>
       </div>
 
